@@ -26,7 +26,7 @@ pip install pyinstaller
 Windows (скачать и распаковать в папку проекта /asstes/)
 ``` 
 
-3. `Pretrained/`должна находтся в `assests/`
+3. `pretrained/`должна находиться в `assests/`
 
 3. Файлы `build.py` и `rebuild.py` должны находиться в корневой папке проекта
 
