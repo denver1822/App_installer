@@ -78,9 +78,9 @@ project/
 ├── ffmpeg/           # Библиотеки FFmpeg
 ├── templates/        # Шаблоны
 ├── settings.yaml     # Конфигурация
-|──.venv/             # Виртуальное окружение
-|──src/               # Подсистемы
-|──tests/             # test files app
+├──.venv/             # Виртуальное окружение
+├──src/               # Подсистемы
+├──tests/             # test files app
 └── .env              # Переменные окружения
 ```
 
