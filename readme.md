@@ -23,7 +23,7 @@ pip install pyinstaller
 2. Для работы с FFmpeg:
 
 ```bash
-Windows (скачать и распаковать в папку проекта /asstes/)
+Windows (скачать и распаковать в корневую папку проекта)
 ``` 
 
 3. `pretrained/`должна находиться в `assests/`
