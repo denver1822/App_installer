@@ -3,32 +3,6 @@ import shutil
 import sys
 from PyInstaller.__main__ import run as pyinstaller_run
 
-def safe_move(src, dst):
-    """Безопасно перемещает файл/папку с проверками и backup"""
-    try:
-        if not os.path.exists(src):
-            print(f"⚠️ Файл для перемещения не найден: {src}")
-            return False
-            
-        if os.path.exists(dst):
-            # Создаем backup
-            backup = dst + ".bak"
-            if os.path.exists(backup):
-                if os.path.isdir(backup):
-                    shutil.rmtree(backup)
-                else:
-                    os.remove(backup)
-            shutil.move(dst, backup)
-            print(f"🔁 Создан backup: {backup}")
-            
-        # Создаем целевую директорию если нужно
-        os.makedirs(os.path.dirname(dst), exist_ok=True)
-        
-        shutil.move(src, dst)
-        return True
-    except Exception as e:
-        print(f"❌ Ошибка при перемещении {src} -> {dst}: {str(e)}")
-        return False
 
 def build_main_app():
     """Сборка основного приложения с проверкой всех этапов"""
